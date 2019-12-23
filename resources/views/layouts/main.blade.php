@@ -73,7 +73,7 @@
                     <nav>
                         <ul class="nav navbar-nav">
                             <li><a href="{{ url('/') }}">Home </a></li>
-                            <li><a href="">God Elevating Hands </a></li>
+                            <li><a href="http://www.elevatedbygod.com/">God Elevating Hands </a></li>
                         </ul>
                     </nav>
 
@@ -162,192 +162,49 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="page-header section-header clearfix">
-                            <h4><strong>SUN OPERATIONAL LIGHT INITIATIVE DEVELOPMENT (SOLID)</strong> is a network and solar affiliate and a sole distributor to Kamisafe Solar Energy, Macpower Inverter, Inegy Kodiac and among others.</h4>
+                            <h5><strong>SUN OPERATIONAL LIGHT INITIATIVE DEVELOPMENT (SOLID)</strong> is a network and solar affiliate and a sole distributor to Kamisafe Solar Energy, Macpower Inverter, Inegy Kodiac and among others.<br></h5>
+
+                            <p style="color: #1b1e21;" class="page-header section-header clearfix">This is an innovation from God’s E-Hands International and its powered by NEOLIFE & AIM GLOBAL with the sole aim to alleviate poverty, to subsidize the high rate of electricity bills that is unseen & the high rate of solar energy by bringing solar power to the use of the common man in fullness with the aim of reaching everyone with solar power and also to subsidize the price of other bigger network companies.</p>
                         </div>
 
                         <div class="article-list flexslider article-slider progressbar">
+
+                            <h5 style="color: #1b1e21;" class="page-header section-header clearfix">For the products to get to the masses at affordable rate which you cannot get anywhere, since all fingers are not equal, SOLID SOLAR SYSTEM has decided to make it affordable to every tom, dick & harry in these 3 outlets.</h5>
+
                             <ul class="slides">
+
                                 <li>
                                     <div class="items zoom">
-                                        <h3 class="h6">Help African Children Get Their Own Homes</h3>
-                                        <a href="#" class="img-thumb">
+                                        <a href="" class="img-thumb">
                                             <figure>
-                                                <img src="{{ asset('assets/img/img-slide-01.jpg') }}" alt="">
+                                                <img src="{{ asset('assets/img/inv/1.jpg') }}" alt="">
                                             </figure>
                                         </a>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-value">72% </span>
-                                            </div>
-                                        </div>
-                                        <span class="donation">Donation : <span class="value">$78,354 <small>/ $1,26,500</small></span></span>
-                                        <p>
-                                            Improve living style of people, who are affected by several health issues & poverty and unable to come out this situation.
-                                        </p>
-                                        <a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">DONATE NOW</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="items zoom">
-                                        <h3 class="h6">Make Girls Educated To Aid Them Earn Reputed Position</h3>
-                                        <a href="#" class="img-thumb">
-                                            <figure>
-                                                <img src="{{ asset('assets/img/img-slide-02.jpg') }}" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-value">60% </span>
-                                            </div>
-                                        </div>
-                                        <span class="donation">Donation : <span class="value">$78,354 <small>/ $1,26,500</small></span></span>
-                                        <p>
-                                            Give an opportunity to girls to become educated, so that, they can stand with boys and get a self exposure worldwide.
-                                        </p>
-                                        <a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">DONATE NOW</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="items zoom">
-                                        <h3 class="h6">Help us to send Vegetables to Africa</h3>
-                                        <a href="#" class="img-thumb">
-                                            <figure>
-                                                <img src="{{ asset('assets/img/img-slide-03.jpg') }}" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-value">80% </span>
-                                            </div>
-                                        </div>
-                                        <span class="donation">Donation : <span class="value">$78,354 <small>/ $1,26,500</small></span></span>
-                                        <p>
-                                            You can offer your support by sending vegetables that we can further send to these children in Africa
-                                        </p>
-                                        <a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">DONATE NOW</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="items zoom">
-                                        <h3 class="h6">Help African Children Get Their Own Homes</h3>
-                                        <a href="#" class="img-thumb">
-                                            <figure>
-                                                <img src="{{ asset('assets/img/img-slide-01.jpg') }}" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-value">72% </span>
-                                            </div>
-                                        </div>
-                                        <span class="donation">Donation : <span class="value">$78,354 <small>/ $1,26,500</small></span></span>
-                                        <p>
-                                            Improve living style of people, who are affected by several health issues & poverty and unable to come out this situation.
-                                        </p>
-                                        <a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">DONATE NOW</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="items zoom">
-                                        <h3 class="h6">Make Girls Educated To Aid Them Earn Reputed Position</h3>
-                                        <a href="#" class="img-thumb">
-                                            <figure>
-                                                <img src="{{ asset('assets/img/img-slide-02.jpg') }}" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-value">60% </span>
-                                            </div>
-                                        </div>
-                                        <span class="donation">Donation : <span class="value">$78,354 <small>/ $1,26,500</small></span></span>
-                                        <p>
-                                            Give an opportunity to girls to become educated, so that, they can stand with boys and get a self exposure worldwide.
-                                        </p>
-                                        <a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">DONATE NOW</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="items zoom">
-                                        <h3 class="h6">Help us to send Vegetables to Africa</h3>
-                                        <a href="#" class="img-thumb">
-                                            <figure>
-                                                <img src="{{ asset('assets/img/img-slide-03.jpg') }}" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-value">80% </span>
-                                            </div>
-                                        </div>
-                                        <span class="donation">Donation : <span class="value">$78,354 <small>/ $1,26,500</small></span></span>
-                                        <p>
-                                            You can offer your support by sending vegetables that we can further send to these children in Africa
-                                        </p>
-                                        <a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">DONATE NOW</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="items zoom">
-                                        <h3 class="h6">Help African Children Get Their Own Homes</h3>
-                                        <a href="#" class="img-thumb">
-                                            <figure>
-                                                <img src="{{ asset('assets/img/img-slide-01.jpg') }}" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-value">72% </span>
-                                            </div>
-                                        </div>
-                                        <span class="donation">Donation : <span class="value">$78,354 <small>/ $1,26,500</small></span></span>
-                                        <p>
-                                            Improve living style of people, who are affected by several health issues & poverty and unable to come out this situation.
-                                        </p>
-                                        <a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">DONATE NOW</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="items zoom">
-                                        <h3 class="h6">Make Girls Educated To Aid Them Earn Reputed Position</h3>
-                                        <a href="#" class="img-thumb">
-                                            <figure>
-                                                <img src="{{ asset('assets/img/img-slide-02.jpg') }}" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-value">60% </span>
-                                            </div>
-                                        </div>
-                                        <span class="donation">Donation : <span class="value">$78,354 <small>/ $1,26,500</small></span></span>
-                                        <p>
-                                            Give an opportunity to girls to become educated, so that, they can stand with boys and get a self exposure worldwide.
-                                        </p>
-                                        <a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">DONATE NOW</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="items zoom">
-                                        <h3 class="h6">Help us to send Vegetables to Africa</h3>
-                                        <a href="#" class="img-thumb">
-                                            <figure>
-                                                <img src="{{ asset('assets/img/img-slide-03.jpg') }}" alt="">
-                                            </figure>
-                                        </a>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-value">80% </span>
-                                            </div>
-                                        </div>
-                                        <span class="donation">Donation : <span class="value">$78,354 <small>/ $1,26,500</small></span></span>
-                                        <p>
-                                            You can offer your support by sending vegetables that we can further send to these children in Africa
-                                        </p>
-                                        <a data-toggle="modal" href="external.html" data-target=".donate-form" class="btn btn-default">DONATE NOW</a>
+                                        <p class="text-black-50">You can buy directly from us in a cheaper rate.</p>
                                     </div>
                                 </li>
 
+                                <li>
+                                    <div class="items zoom">
+                                        <a href="" class="img-thumb">
+                                            <figure>
+                                                <img src="{{ asset('assets/img/inv/2.jpg') }}" alt="">
+                                            </figure>
+                                        </a>
+                                        <p>You can buy and pay in stipulated period (T & C apply).</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="items zoom">
+                                        <a href="" class="img-thumb">
+                                            <figure>
+                                                <img src="{{ asset('assets/img/inv/3.jpg') }}" alt="">
+                                            </figure>
+                                        </a>
+                                        <p>You register with a one time  payment of three Thousand one hundred naira only (#3,100) to become a  member of the organization and join the referral program to get it all for free of charge and also be receiving money, solar products and free supplements from our sponsors.</p>
+                                    </div>
+                                </li>
 
                             </ul>
                         </div>
@@ -357,180 +214,123 @@
         </section>
         <!-- Our Causes Section End Here-->
 
-        <!-- How To Help Section Start Here -->
-        <section class="how-to-help">
+        <section style="background-color: #EFCF4F" class="help-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 ">
+                    <div class="col-xs-12">
                         <header class="page-header section-header">
-                            <h2>How you can help? <strong>See below</strong></h2>
+                            <h2>How to <strong class="border-none">Apply</strong></h2>
                         </header>
-
                         <div class="row help-list">
-                            <div class="col-xs-12 col-sm-6 col-lg-5">
-                                <article class="media">
-                                    <a class="pull-left warning-icon-box" href="our-story.html"><i class="icon-volume"></i></a>
-                                    <div class="media-body less-width">
-                                        <h3 class="media-heading">Media</h3>
-                                        <p>
-                                            Donate money anywhere &amp; anytime to offer help in Africans through different medias.
-                                        </p>
-                                    </div>
-                                </article>
-                                <article class="media">
-                                    <a class="pull-left warning-icon-box" href="volunteer.html"><i class="icon-user"></i></a>
-                                    <div class="media-body less-width">
-                                        <h3 class="media-heading">Become Volunteer</h3>
-                                        <p>
-                                            Take initiate to become a volunteer and help those people, who do not have any hope for good living.
-                                        </p>
-                                    </div>
-                                </article>
-                                <article class="media">
-                                    <a class="pull-left warning-icon-box" href="external.html" data-toggle="modal" data-target=".donate-form"><i class="icon-heart"></i></a>
-                                    <div class="media-body less-width">
-                                        <h3 class="media-heading">Send Donation</h3>
-                                        <p>
-                                            Choose any medium either offline or online to send donation and aid NGOs to support people who are facing poverty.
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <div class="row">
 
-                                        </p>
+                                    <div class="media col-xs-12 col-md-4">
+                                        <div class="media-content equal-block" style="height: 350px;">
+                                            <span class="svg-shape megaphone">
+                                                <img src="{{ asset('assets/svg/megaphone.svg') }}" alt="" class="svg"> </span>
+                                            <div class="media-body less-width">
+                                                <h3 class="media-heading">
+                                                    <a href="">Registration</a> </h3>
+                                                <p>Register as a user and get your two downliners for the right and left section, you will receive the sum of ₦5000. When you get up to 14 downliners, you will be upgraded to level 2</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </article>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-lg-6 col-lg-offset-1">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <img  src="{{ asset('assets/img/video-frame.jpg') }}" alt="Click to play" data-video="http://www.youtube.com/embed/zP_D_YKnwi0?autoplay=1"/>
+
+                                    <div class="media col-xs-12 col-md-4">
+                                        <div class="media-content equal-block" style="height: 350px;">
+                                            <span class="svg-shape">
+                                                <img src="{{ asset('assets/svg/user.svg') }}" alt="" class="svg"> </span>
+                                            <div class="media-body less-width">
+                                                <h3 class="media-heading"><a href="">Stage 2</a> </h3>
+                                                <p>While in stage 2 When your 14 dowliners upgrades from stage 1 to meet you in stage 2 the you will receive the sum of ₦10,000 with mini solar kit as an incentive worth of ₦15,000 making the total to be ₦25000 and the upgrade counts still continues from the 14 then, When your downliners that meet you in stage 2 becomes 126, you will be upgraded to stage 3. with a reword of ₦310,000 naira, splitted into two #100,000 cash and solar products</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="media col-xs-12 col-md-4">
+                                        <div class="media-content equal-block" style="height: 350px;">
+                                            <span class="svg-shape"> <img src="{{ asset('assets/svg/user.svg') }}" alt="" class="svg"> </span>
+                                            <div class="media-body less-width">
+                                                <h3 class="media-heading">
+                                                    <a href="" data-toggle="modal" data-target=".donate-form">Stage 3</a></h3>
+                                                <p>While in stage 3, Once your 126 downliners are upgraded from stage 2 meet you in stage 3, you will be upgraded to stage 4 with a reward of ₦3.1 million naira, the money will be split into 3 parts ₦1 million to your other network products, ₦900,000 to your house solar products & the last ₦1.2million cash to your bank account</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="media col-xs-12 col-md-4">
+                                        <div class="media-content equal-block" style="height: 350px;">
+                                            <span class="svg-shape"> <img src="{{ asset('assets/svg/user.svg') }}" alt="" class="svg"> </span>
+                                            <div class="media-body less-width">
+                                                <h3 class="media-heading">
+                                                    <a href="" data-toggle="modal" data-target=".donate-form">Stage 4</a></h3>
+                                                <p>While in stage 4, when your 126 downliners that upgraded from stage 3 meet you in stage 4, you will be upgraded to stage 5 with a reward of ₦10 million naira the money will be split into 4 parts ₦2.5 million naira for Car, ₦1.4 million naira for network product upgrade, ₦3 million naira for solar products, & ₦3.1 million naira cash to your bank account</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="media col-xs-12 col-md-4">
+                                        <div class="media-content equal-block" style="height: 350px;">
+                                            <span class="svg-shape"> <img src="{{ asset('assets/svg/user.svg') }}" alt="" class="svg"> </span>
+                                            <div class="media-body less-width">
+                                                <h3 class="media-heading">
+                                                    <a href="" data-toggle="modal" data-target=".donate-form">Stage 5</a></h3>
+                                                <p>While in Stage 5, Once your 62 downliners have been upgraded from stage 4 to meet you in stage 5, you will be upgraded to stage 6 and that qualifies you to Evergreen whereby the user is entitled to a house, a trip abroad, Complete Solar Products, Sponsors products Supplements & Cash all amounted to ₦20 million naira. From there your user slot ceases to exist </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
-        <!-- How To Help Section End Here-->
 
         <!-- Become Volunteer Section Start Here -->
         <section class="parallax-section parallax">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-7 col-md-5">
-                        <h2>Become <strong>Volunteer</strong></h2>
+                        <h2>Join us <strong>Now</strong></h2>
                         <p>
                             Spread the awareness of helping people, so that they can live a normal life in the society and educate their children that everyone deserves.
                         </p>
-                        <a data-toggle="modal" href="external.html" data-target=".join-now-form" class="btn btn-default">Join Now</a>
+                        <a href="" class="btn btn-default">Join Now</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Become Volunteer Section End Here -->
-
-        <!--Testimonial Section Start Here -->
-        <section class="testimonial parallax">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="testimonial-slider flexslider">
-                            <ul class="slides">
-                                <li>
-                                    <div class="slide">
-                                        <h2>Donation Holders say <strong> Read Below </strong></h2>
-                                        <blockquote>
-                                            <p>
-                                                “Most of the dimensions related to life of human and their their living condition are in trouble these days, so help them to take a voluntarily step.”
-                                            </p>
-                                            <footer>
-                                                <span>TONY VEDVIK</span>
-                                                <cite>(Head Sales of Sense Technology)</cite>
-                                            </footer>
-                                        </blockquote>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="slide">
-                                        <h2>Donation Holders say <strong> Read Below</strong></h2>
-                                        <blockquote>
-                                            <p>
-                                                “Etiam imperdiet metus ut pretium gravida uisque et vestibulum lacus. Maecenas at lacinia lacus. ”
-                                            </p>
-                                            <footer>
-                                                <span>Jhony Waker</span>
-                                                <cite>(CEO at NewCompany)</cite>
-                                            </footer>
-                                        </blockquote>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="slide">
-                                        <h2>Donation Holders say <strong> Read Below</strong></h2>
-                                        <blockquote>
-                                            <p>
-                                                “Most of the dimensions related to life of human and their their living condition are in trouble these days, so help them to take a voluntarily step.”
-                                            </p>
-                                            <footer>
-                                                <span>TONY VEDVIK</span>
-                                                <cite>(Head Sales of Sense Technology)</cite>
-                                            </footer>
-                                        </blockquote>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Testimonial Section End Here -->
-
     </div>
     <!--Content End Here -->
+
     <!--Footer Section Start Here -->
     <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-4">
+
                     <div class="footer-logo">
-                        <a href="index-2.html" title="Welcome to Charity">
-                            <img src="{{ asset('assets/img/logo.png') }}" alt="Charity"></a>
+                        <a href="{{ url('/') }}" title="Welcome to Charity">
+                            <img src="{{ asset('solid_logo.png') }}" width="120" alt="SUN OPERATIONAL LIGHT INITIATIVE DEVELOPMENT"></a>
                     </div>
-                    <p>
-                        It is a fundraising association that works globally to provide support in education via charity. Their members have spread worldwide to ensure that fundraising amount to delivering at the right place and for the right purposes
-                    </p>
-                    <address>
-                        <span> <i class="fa fa-home"></i> <span>A-105, Sector-82, Agra, 282001, India</span> </span>
-                        <span> <i class="fa fa-phone-square"></i> <span>+1 123 456 7890</span> </span>
-                        <span> <i class="fa fa-envelope"></i> <span><a href="https://theemon.com/cdn-cgi/l/email-protection#e3808c8d97828097a3808b82918a979acd808c8e"><span class="__cf_email__" data-cfemail="3a5955544e5b594e7a59525b48534e4314595557">[email&#160;protected]</span></a></span> </span>
-                    </address>
+
+                    <p>SUN OPERATIONAL LIGHT INITIATIVE DEVELOPMENT (SOLID) is a network and solar affiliate and a sole distributor to Kamisafe Solar Energy, Macpower Inverter, Inegy Kodiac and among others.</p>
 
                 </div>
                 <div class="col-xs-12 col-sm-4 twitter-update">
-                    <h6>Twitter Feed</h6>
-                    <p>
-                        <a href="#"> <span class="charity">@charity</span> We are a charity trust that dedicatedly work for several countries around the globe.  Twitter Alerts will provide your some critical information about those people that need help of yours. <span class="comment-time">2 hours ago</span> </a>
-                    </p>
-                    <p>
-                        <a href="#"> <span class="charity">@charity</span> Use Twitter as the best conversation platform to make the people aware of the worst situation that many of Africans are facing. Tweet for them and raise fund in the best possible way. <span class="comment-time">2 hours ago</span> </a>
-                    </p>
+                    <h6>Contact</h6>
+                    <address>
+                        <span> <i class="fa fa-home"></i> <span>A-105, Sector-82, Agra, 282001, India</span> </span>
+                        <span> <i class="fa fa-phone-square"></i> <span>+1 123 456 7890</span> </span>
+                    </address>
                 </div>
+
                 <div class="col-xs-12 col-sm-4">
-                    <h6>Newsletter Signup</h6>
-                    <p>
-
-                        Sign up your account to check our newsletter that will undoubtedly help you acquainted with current scenario.
-                    </p>
-                    <form role="form" class="sign-up">
-
-                        <div class="input-group">
-                            <input class="form-control" type="email" placeholder="Email">
-                            <div class="input-group-addon">
-                                <input type="submit" class="btn btn-theme" value="Submit">
-                            </div>
-                        </div>
-
-                    </form>
-
                     <h6>Follow us</h6>
                     <ul class="social-icons">
                         <li>
@@ -540,27 +340,18 @@
                             <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="http://dribble.com/" target="_blank"><i class="fa fa-dribbble"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
-                        </li>
-                        <li>
                             <a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
+
             </div>
         </div>
         <div class="copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-								<span> &copy; Copyright 2014, All Rights Reserved by Charity Theme.
-									</span>
+                        <span> &copy; Copyright {{ date('Y') }}, All Rights Reserved.</span>
                     </div>
                 </div>
             </div>
@@ -569,217 +360,7 @@
     <!--Footer Section End Here -->
 
 </div>
-<!-- join now form popup -->
-<div class="modal join-now-form">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    &times;
-                </button>
-                <header class="page-header">
-                    <h2>Become a <strong>Volunteer</strong></h2>
-                </header>
-            </div>
-            <div class="modal-body">
-                <form role="form">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label for="name-join">Name<span>*</span></label>
-                                <input type="text" class="form-control" id="name-join">
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label for="last-name-join">Last Name<span>*</span></label>
-                                <input type="text" class="form-control" id="last-name-join">
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label for="email-join">Email<span>*</span></label>
-                                <input type="text" class="form-control" id="email-join">
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label for="phone-join">Phone<span>*</span></label>
-                                <input type="text" class="form-control" id="phone-join">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label for="zip-code-join">ZIP code<span>*</span></label>
-                                <input type="password" class="form-control" id="zip-code-join">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12">
-                                <label for="message-join">Why you join volunteer<span>*</span></label>
-                                <textarea class="form-control" id="message-join"></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12">
-                                <button type="button" class="btn btn-default pull-right">
-                                    Submit
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12">
-                                <p class="forms-notes">
-                                    Note: Note for voulnteer form
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-<!-- join now form popup -->
-<!-- donation form popup -->
-
-<div class="modal donate-form">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    &times;
-                </button>
-                <header class="page-header">
-                    <h2>You are donating to. <strong>Example Causes name</strong></h2>
-                </header>
-            </div>
-            <div class="modal-body">
-                <form role="form">
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label>How much would you like to donate ?</label>
-
-                                <div class="choose-pricing">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default active">
-                                            $12
-                                        </button>
-                                        <button type="button" class="btn btn-default">
-                                            $22
-                                        </button>
-                                        <button type="button" class="btn btn-default">
-                                            $32
-                                        </button>
-
-                                        <input type="text" placeholder="Custom" class="inpt-first form-control">
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="row display">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <div class="dropdown">
-                                    <button class="btn btn-width dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                                        <small> Donation Type</small>
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="#">Every Monthly (Recurring)</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="#">One Time Donation</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label for="name">Name<span>*</span></label>
-                                <input type="text" class="form-control" id="name">
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label for="last-name">Last Name<span>*</span></label>
-                                <input type="text" class="form-control" id="last-name">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label for="name">Email<span>*</span></label>
-                                <input type="text" class="form-control" id="email">
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label for="phone">Phone<span>*</span></label>
-                                <input type="text" class="form-control" id="phone">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label for="message">Address<span>*</span></label>
-                                <textarea class="form-control" id="message"></textarea>
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label for="add-note">Additional Note</label>
-                                <textarea class="form-control" id="add-note"></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12">
-                                <input type="submit" value="DONATE" class="btn btn-default pull-right">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group col-xs-12">
-                                <p class="forms-notes">
-                                    Note: Lorem ipsum dolor sit amet
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-<!-- donation form popup -->
 
 <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
