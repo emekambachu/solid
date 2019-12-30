@@ -21,5 +21,9 @@ use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
-    //
+    public function index(){
+
+        return view('users.index');
+
+    }
 }

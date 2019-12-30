@@ -36,7 +36,6 @@ class User extends Authenticatable
         'accnum',
         'payopt',
         'feename',
-        'feenum',
         'slipnum',
         'prefbank',
         'balance',

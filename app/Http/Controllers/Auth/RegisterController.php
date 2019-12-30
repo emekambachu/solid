@@ -58,20 +58,19 @@ class RegisterController extends Controller
             'firstname' => ['required', 'string', 'max:50'],
             'lastname' => ['required', 'string', 'max:50'],
             'username' => ['required', 'string', 'max:50', 'unique:users'],
-            'referer' => ['required', 'string', 'max:50', 'exists:username'],
+            'referer' => ['string', 'max:50', 'exists:username'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'mobile' => ['required', 'regex:/^[\w-]*$/'],
             'state' => ['required', 'string', 'max:50'],
-            'address' => ['required', 'string', 'max:100'],
-            'nokname' => ['required', 'string', 'max:100'],
-            'nokmobile' => ['required', 'regex:/^[\w-]*$/', 'max:100'],
+            'address' => ['string', 'max:100'],
+            'nokname' => ['string', 'max:100'],
+            'nokmobile' => ['regex:/^[\w-]*$/', 'max:100'],
             'accname' => ['required', 'string', 'max:100'],
             'bank' => ['required', 'string', 'max:50'],
             'accnum' => ['required', 'regex:/[0-9]{9}', 'max:100'],
             'payopt' => ['required', 'string', 'max:50'],
             'feename' => ['required', 'string', 'max:50'],
-            'feenum' => ['required', 'string', 'max:50'],
             'slipnum' => ['required', 'string', 'max:100'],
             'prefbank' => ['required', 'string', 'max:50'],
 
@@ -84,8 +83,15 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
-    {
+    protected function create(array $data, Request $request){
+
+        // if no referer was inserted or selected
+        if(empty($request->input('referer')) && empty($request->input('select-referer'))){
+
+            Session::flash('warning', 'You must insert a referer username or select from dropdown');
+            return redirect()->back();
+        }
+
         $user = User::create([
             'firstname' => $data['firstname'],
             'lastname' => $data['lastname'],
@@ -103,7 +109,6 @@ class RegisterController extends Controller
             'accnum' => $data['accnum'],
             'payopt' => $data['payopt'],
             'feename' => $data['feename'],
-            'feenum' => $data['feenum'],
             'slipnum' => $data['slipnum'],
             'prefbank' => $data['prefbank'],
             'balance' => 0
@@ -116,4 +121,7 @@ class RegisterController extends Controller
         return $user;
 
     }
+
+    // validated referers and selected referers in vendor/laravel/framework/src/illumenate/foundation/auth/registersusers
+
 }

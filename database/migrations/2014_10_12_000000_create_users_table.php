@@ -35,6 +35,7 @@ class CreateUsersTable extends Migration
             $table->string('bank');
             $table->string('left')->nullable();
             $table->string('right')->nullable();
+            $table->integer('is_active')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

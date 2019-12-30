@@ -35,3 +35,8 @@ Route::post('admin-login', ['as'=>'admin-login','uses'=>'Auth\AdminLoginControll
 
 // Dashboard Page
 Route::get('admin/dashboard', 'AdminController@index')->name('admin-dashboard');
+
+// User Dashboard Page
+Route::get('user/dashboard', 'UserController@index')->name('user-dashboard');
+
+
