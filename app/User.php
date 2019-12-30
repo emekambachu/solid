@@ -16,7 +16,33 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+
+        'level_id',
+        'image_id',
+        'is_active',
+        'firstname',
+        'lastname',
+        'username',
+        'referer',
+        'email',
+        'password',
+        'mobile',
+        'state',
+        'address',
+        'nokname',
+        'nokmobile',
+        'accname',
+        'bank',
+        'accnum',
+        'payopt',
+        'feename',
+        'feenum',
+        'slipnum',
+        'prefbank',
+        'balance',
+        'left',
+        'right'
+
     ];
 
     /**
@@ -36,4 +62,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function image(){
+        return $this->belongsTo(Image::class);
+    }
+
+    public function level(){
+        return $this->belongsTo(Level::class);
+    }
+
+    public function transactions(){
+        return $this->hasMany(Transaction::class);
+    }
 }

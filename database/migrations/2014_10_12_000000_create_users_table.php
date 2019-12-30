@@ -31,8 +31,10 @@ class CreateUsersTable extends Migration
             $table->string('nokmobile');
             $table->string('accname');
             $table->string('accnum');
-            $table->string('accbal');
+            $table->string('balance')->default(0);
             $table->string('bank');
+            $table->string('left')->nullable();
+            $table->string('right')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

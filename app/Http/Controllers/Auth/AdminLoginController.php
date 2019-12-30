@@ -3,13 +3,11 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class LoginController extends Controller
+class AdminLoginController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -31,17 +29,19 @@ class LoginController extends Controller
     public function logout(Request $request)
     {
         $this->performLogout($request);
-        return redirect()->route('login');
+        return redirect()->route('admin-login');
     }
 
     use AuthenticatesUsers;
+
+    protected $guard = 'admin';
 
     /**
      * Where to redirect users after login.
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/admin';
 
     /**
      * Login username to be used by the controller.
@@ -56,11 +56,29 @@ class LoginController extends Controller
      *
      * @return void
      */
-    public function __construct(){
+    public function __construct()
+    {
         $this->middleware('guest')->except('logout');
     }
 
+    /**
+     * Get username property.
+     *
+     * @return string
+     */
     public function username(){
         return 'username';
+    }
+
+    public function showLoginForm(){
+
+        return view('auth.admin-login');
+
+    }
+
+    protected function guard(){
+
+        return Auth::guard('admin');
+
     }
 }

@@ -133,6 +133,10 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+
+        'referer' => [
+            'exists' => 'This :attribute does not exist in our database',
+        ],
     ],
 
     /*
