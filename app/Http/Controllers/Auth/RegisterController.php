@@ -58,17 +58,17 @@ class RegisterController extends Controller
             'firstname' => ['required', 'string', 'max:50'],
             'lastname' => ['required', 'string', 'max:50'],
             'username' => ['required', 'string', 'max:50', 'unique:users'],
-            'referer' => ['string', 'max:50', 'exists:username'],
+            'referer' => ['max:50', 'exists:users', 'sometimes', 'nullable'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'mobile' => ['required', 'regex:/^[\w-]*$/'],
-            'state' => ['required', 'string', 'max:50'],
-            'address' => ['string', 'max:100'],
-            'nokname' => ['string', 'max:100'],
-            'nokmobile' => ['regex:/^[\w-]*$/', 'max:100'],
+            'state' => ['required', 'string', 'min:2', 'nullable'],
+            'address' => ['string', 'max:100', 'nullable'],
+            'nokname' => ['string', 'max:100', 'nullable'],
+            'nokmobile' => ['regex:/^[\w-]*$/', 'max:100', 'nullable'],
             'accname' => ['required', 'string', 'max:100'],
             'bank' => ['required', 'string', 'max:50'],
-            'accnum' => ['required', 'regex:/[0-9]{9}', 'max:100'],
+            'accnum' => ['required', 'numeric', 'min:6', 'regex:/^[0-9]+$/'],
             'payopt' => ['required', 'string', 'max:50'],
             'feename' => ['required', 'string', 'max:50'],
             'slipnum' => ['required', 'string', 'max:100'],
@@ -83,14 +83,41 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data, Request $request){
+    protected function create(array $data){
 
-        // if no referer was inserted or selected
-        if(empty($request->input('referer')) && empty($request->input('select-referer'))){
-
-            Session::flash('warning', 'You must insert a referer username or select from dropdown');
-            return redirect()->back();
-        }
+        // INSERT ALL COMMENTED COMANDS BELOW INTO THE register function IN VENDOR/LARAVEL/FRAMEWORK/SRC/ILLUMENATE/FOUNDATION/AUTH/registersusers.php
+//        // if no referer was inserted or selected
+//        if(empty($request->input('referer')) && empty($request->input('select-referer'))){
+//
+//            Session::flash('warning', 'You must insert a referer username or select from dropdown');
+//            return redirect()->back();
+//        }
+//
+//        if(!empty($request->input('referer')) && empty($request->input('select-referer'))){
+//
+//            $data['referer'] = $request->input('referer');
+//        }else{
+//
+//            $data['referer'] = $request->input('select-referer');
+//        }
+//
+//        // If user inserts a referer and selects from dropdown
+//        if(!empty($request->input('referer')) && !empty($request->input('select-referer'))){
+//
+//            Session::flash('warning', 'You can only insert a referer or select from dropdown but not both');
+//            return redirect()->back();
+//        }
+//
+//        // check if referer has more than two downliners
+//        $checkReferer = User::where([
+//            ['referer', '=', $request->input('referer')]
+//        ])->count();
+//
+//        // if referer has more than two downliners redirect back
+//        if($checkReferer > 2){
+//            Session::flash('warning', 'This referer already has more than two downliners');
+//            return redirect()->back();
+//        }
 
         $user = User::create([
             'firstname' => $data['firstname'],
@@ -114,6 +141,22 @@ class RegisterController extends Controller
             'balance' => 0
         ]);
 
+        $getReferer = User::where([
+            ['username', '=', $user->referer],
+        ])->get()->first()->first;
+
+        if(empty($getReferer->left)){
+
+            $getReferer->left = $user->username;
+            $getReferer->save();
+
+        }else{
+
+            $getReferer->right = $user->username;
+            $getReferer->save();
+
+        }
+
         // add name and email to session
         session()->put('firstname', $data['firstname']);
         session()->put('lastname', $data['lastname']);
@@ -122,6 +165,6 @@ class RegisterController extends Controller
 
     }
 
-    // validated referers and selected referers in vendor/laravel/framework/src/illumenate/foundation/auth/registersusers
+    // validated referers and selected referers in vendor/laravel/framework/src/illumenate/foundation/auth/registersusers.php
 
 }

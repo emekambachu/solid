@@ -56,6 +56,8 @@
                 </a>
 
                 <h3 class="text-white">Sign up</h3>
+
+                @include('includes.alerts')
             </div>
 
             <form method="POST" action="{{ route('register') }}">
@@ -82,6 +84,14 @@
                         <label for="username" class="text-white">Username</label>
                         <input id="username" type="text" class="form-control mb-20 @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus>
                         @error('username')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
+
+                        <label for="mobile" class="text-white">Mobile Number</label>
+                        <input id="mobile" type="text" class="form-control mb-20 @error('mobile') is-invalid @enderror" name="mobile" value="{{ old('mobile') }}" required autocomplete="mobile" autofocus>
+                        @error('mobile')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -134,6 +144,10 @@
                         </span>
                         @enderror
 
+                    </div>
+
+                    <div class="col-md-6">
+
                         <label for="address" class="text-white">Address</label>
                         <input id="address" type="text" class="form-control mb-20 @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" autofocus>
                         @error('address')
@@ -141,10 +155,6 @@
                             <strong>{{ $message }}</strong>
                         </span>
                         @enderror
-
-                    </div>
-
-                    <div class="col-md-6">
 
                         <label for="nokname" class="text-white">Next of kin Name</label>
                         <input id="nokname" type="text" class="form-control mb-20 @error('nokname') is-invalid @enderror" name="nokname" value="{{ old('nokname') }}" autofocus>

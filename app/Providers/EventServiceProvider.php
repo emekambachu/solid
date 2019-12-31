@@ -31,24 +31,5 @@ class EventServiceProvider extends ServiceProvider
     {
         parent::boot();
 
-        User::created(function($user)
-        {
-            $user->id;
-            $user->referer;
-
-            $getReferer = User::where([
-                ['username', '=', $user->referer],
-            ])->get()->first()->first;
-
-            if(empty($getReferer->left)){
-                $getReferer->left = $user->username;
-                $getReferer->save();
-            }elseif(empty($getReferer->right)){
-                $getReferer->right = $user->username;
-                $getReferer->save();
-            }else{
-
-            }
-        });
     }
 }
