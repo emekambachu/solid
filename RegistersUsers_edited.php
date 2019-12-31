@@ -37,23 +37,16 @@ trait RegistersUsers
     {
         $this->validator($request->all())->validate();
 
+        // START LOGIC
         // if no referer was inserted or selected
-        if(empty($request->input('referer')) && empty($request->input('select-referer'))){
+        if(empty($request->input('referer')) && empty($request->input('select_referer'))){
 
             Session::flash('warning', 'You must insert a referer username or select from dropdown');
             return redirect()->back();
         }
 
-        if(!empty($request->input('referer')) && empty($request->input('select-referer'))){
-
-            $data['referer'] = $request->input('referer');
-        }else{
-
-            $data['referer'] = $request->input('select-referer');
-        }
-
         // If user inserts a referer and selects from dropdown
-        if(!empty($request->input('referer')) && !empty($request->input('select-referer'))){
+        if(!empty($request->input('referer')) && !empty($request->input('select_referer'))){
 
             Session::flash('warning', 'You can only insert a referer or select from dropdown but not both');
             return redirect()->back();
@@ -69,6 +62,7 @@ trait RegistersUsers
             Session::flash('warning', 'This referer already has more than two downliners');
             return redirect()->back();
         }
+        // END LOGIC
 
         event(new Registered($user = $this->create($request->all())));
 

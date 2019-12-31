@@ -75,6 +75,7 @@ class RegisterController extends Controller
             'prefbank' => ['required', 'string', 'max:50'],
 
         ]);
+
     }
 
     /**
@@ -85,24 +86,18 @@ class RegisterController extends Controller
      */
     protected function create(array $data){
 
-        // INSERT ALL COMMENTED COMANDS BELOW INTO THE register function IN VENDOR/LARAVEL/FRAMEWORK/SRC/ILLUMENATE/FOUNDATION/AUTH/registersusers.php
-//        // if no referer was inserted or selected
-//        if(empty($request->input('referer')) && empty($request->input('select-referer'))){
+// INSERT ALL COMMENTED COMMANDS BELOW INTO THE register function IN VENDOR/LARAVEL/FRAMEWORK/SRC/ILLUMENATE/FOUNDATION/AUTH/registersusers.php
+
+// if no referer was inserted or selected
+//        if(empty($request->input('referer')) && empty($request->input('select_referer'))){
 //
 //            Session::flash('warning', 'You must insert a referer username or select from dropdown');
 //            return redirect()->back();
 //        }
 //
-//        if(!empty($request->input('referer')) && empty($request->input('select-referer'))){
-//
-//            $data['referer'] = $request->input('referer');
-//        }else{
-//
-//            $data['referer'] = $request->input('select-referer');
-//        }
 //
 //        // If user inserts a referer and selects from dropdown
-//        if(!empty($request->input('referer')) && !empty($request->input('select-referer'))){
+//        if(!empty($request->input('referer')) && !empty($request->input('select_referer'))){
 //
 //            Session::flash('warning', 'You can only insert a referer or select from dropdown but not both');
 //            return redirect()->back();
@@ -119,11 +114,21 @@ class RegisterController extends Controller
 //            return redirect()->back();
 //        }
 
+        if(!empty($data['referer']) && empty($data['select_referer'])){
+
+            $referer = $data['referer'];
+
+        }else{
+
+            $referer = $data['select_referer'];
+
+        }
+
         $user = User::create([
             'firstname' => $data['firstname'],
             'lastname' => $data['lastname'],
             'username' => $data['username'],
-            'referer' => $data['referer'],
+            'referer' => $referer,
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'mobile' => $data['mobile'],
@@ -143,7 +148,7 @@ class RegisterController extends Controller
 
         $getReferer = User::where([
             ['username', '=', $user->referer],
-        ])->get()->first()->first;
+        ])->get()->first();
 
         if(empty($getReferer->left)){
 

@@ -125,15 +125,11 @@
                         @enderror
 
                         <label for="select-referer" class="text-white">Select Referer if you do not have any above</label>
-                        <select class="form-control mb-20" name="select_referer">
+                        <select id="select-referer" class="form-control mb-20" name="select_referer">
                             <option>Select referer if not inserted above</option>
-                            @if($referers)
-                                @foreach($referers as $ref)
-                                <option value="{{ $ref->username }}">{{ $ref->username }}</option>
-                                @endforeach
-                            @else
-                                <option>No referer available</option>
-                            @endif
+                            @foreach($referers as $ref)
+                            <option value="{{ $ref->username }}">{{ $ref->username }}</option>
+                            @endforeach
                         </select>
 
                         <label for="state" class="text-white">State</label>
@@ -268,6 +264,10 @@
 
                 </div>
             </form>
+
+            <div class="text-center text-white mt-20">
+                <p><strong><a href="{{ route('login') }}">Login</a></strong></p>
+            </div>
 
         </div>
 

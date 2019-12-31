@@ -26,11 +26,15 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('state');
-            $table->string('address');
-            $table->string('nokname');
-            $table->string('nokmobile');
+            $table->string('address')->nullable();
+            $table->string('nokname')->nullable();
+            $table->string('nokmobile')->nullable();
             $table->string('accname');
             $table->string('accnum');
+            $table->string('payopt')->nullable();
+            $table->string('feename');
+            $table->string('slipnum');
+            $table->string('prefbank')->nullable();
             $table->string('balance')->default(0);
             $table->string('bank');
             $table->string('left')->nullable();

@@ -87,6 +87,10 @@
                 </div>
             </form>
 
+            <div class="text-center text-white mt-20">
+                <p><strong><a href="{{ route('register') }}">Register</a></strong></p>
+            </div>
+
         </div>
 
     </div><!-- Content Body End -->
