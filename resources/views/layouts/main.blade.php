@@ -39,8 +39,8 @@
                 <a href="{{ url('/') }}" class="col-xs-12 col-sm-2 brand" title="SUN OPERATIONAL LIGHT INITIATIVE DEVELOPMENT">
                     <img src="{{ asset('solid_logo.png') }}" width="120" alt="SUN OPERATIONAL LIGHT INITIATIVE DEVELOPMENT"></a>
                 <div class="social-links col-xs-12 col-sm-10">
-                    <a href="" class="btn btn-default btn-volunteer">Signup</a>
-                    <a href="" class="btn btn-default btn-volunteer">Login</a>
+                    <a href="{{ asset('register') }}" class="btn btn-default btn-volunteer">Signup</a>
+                    <a href="{{ asset('login') }}" class="btn btn-default btn-volunteer">Login</a>
                     <ul class="social-icons hidden-xs">
                         <li>
                             <a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>

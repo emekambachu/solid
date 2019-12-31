@@ -18,12 +18,19 @@ use Illuminate\Support\Facades\Mail;
 
 // add for flash session
 use Illuminate\Support\Facades\Session;
+use Mockery\Matcher\Not;
 
 class UserController extends Controller
 {
     public function index(){
 
-        return view('users.index');
+        $countLeft = User::where('referer', Auth::user()->left)
+                          ->where('is_active', 1)
+                          ->where('right', !NULL)
+                          ->where('left', !NULL)
+                          ->count();
+
+        return view('users.index', compact('countLeft'));
 
     }
 }

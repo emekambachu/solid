@@ -126,7 +126,7 @@
 
                         <label for="select-referer" class="text-white">Select Referer if you do not have any above</label>
                         <select id="select-referer" class="form-control mb-20" name="select_referer">
-                            <option>Select referer if not inserted above</option>
+                            <option disabled selected>Select referer if not inserted above</option>
                             @foreach($referers as $ref)
                             <option value="{{ $ref->username }}">{{ $ref->username }}</option>
                             @endforeach
