@@ -27,10 +27,10 @@ Route::get('/registration-complete', function(){
 });
 
 // Admin Section
-//Login Page
+// Login Page
 Route::get('admin-login', 'Auth\AdminLoginController@showLoginForm')->name('admin-login');
 
-//Submit Login
+// Submit Login
 Route::post('admin-login', ['as'=>'admin-login','uses'=>'Auth\AdminLoginController@login']);
 
 // Dashboard Page
